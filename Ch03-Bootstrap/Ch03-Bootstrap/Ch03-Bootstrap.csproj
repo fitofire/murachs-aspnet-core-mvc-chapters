@@ -7,10 +7,4 @@
     <RootNamespace>Ch03_Bootstrap</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Views\Home\" />
-    <Folder Include="Views\Shared\" />
-  </ItemGroup>
-
 </Project>

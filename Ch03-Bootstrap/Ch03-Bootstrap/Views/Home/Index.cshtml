@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Bootstrap Practice";
+}
+<h1 class="px-4">Bootstrap Practice</h1>
+<main class="container mb-4 px-4">
+    <h3>Bootstrap grid</h3>
+    <div class="row">
+        <div class="col-12 blue-div">Column 1</div>
+        <div class="col-12 blue-div">Column 2</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 blue-div">Column A</div>
+        <div class="col-md-8 blue-div">Column B</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-6 blue-div">Column 1A</div>
+        <div class="col-md-8 col-sm-6 blue-div">Column 2A</div>
+    </div>
+</main>
+
+<form asp-action="Login" method="post" class="mt-4 px-4">
+    <h3>Forms Vertical Layout</h3>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" type="email" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="pwd" class="form-label">Password</label>
+        <input id="pwd" type="password" class="form-control" />
+    </div>
+    <div>
+        <label for="major" class="form-label">Major:</label>
+        <select id="major" class="form-select">
+            <option value="Computer Science">Computer Science</option>
+            <option value="Film">Film</option>
+            <option value="Business">Buisness</option>
+        </select>
+    </div>
+</form>
+
+<form asp-action="Login" method="post" class="mt-4 px-4">
+    <h3>Forms Floating Labels</h3>
+    <div class="form-floating mb-3">
+        <input id="email" type="email" class="form-control" />
+        <label for="email">Email</label>
+    </div>
+    <div class="form-floating">
+        <input id="pwd" type="password" class="form-control" />
+        <label for="pwd">Password</label>
+    </div>
+</form>
+
+<form asp-action="Login" method="post" class="mt-4 mb-8 px-4">
+    <h3>Forms Horizontal Layout</h3>
+    <div class="row mb-3 .horizontal-div">
+        <label for="email" class="col-form-label col-md-2">Email:</label>
+        <div class="row">
+            <input id="email" type="email" class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <label for="pwd" class="col-form-label col-md-2">Password:</label>
+        <div>
+            <input id="pwd" type="password" class="form-control" />
+        </div>
+    </div>
+</form>
