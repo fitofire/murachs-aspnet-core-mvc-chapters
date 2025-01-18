@@ -194,3 +194,18 @@
     <a asp-controller="Home" asp-action="Index" class="list-group-item">Assetto Corsa Competezione</a>
     <a asp-controller="Home" asp-action="Index" class="list-group-item">Assetto Corsa Evo</a>
 </div>
+<h3> How to work with alerts and breadcrumbs</h3>
+<h5 class="ms-5 me-5">A dismissible alert with a link</h5>
+<div class="alert alert-success alert-dismissible ms-5 me-5 mb-3">
+    Success! <a href="#" class="alert-link">Learn more</a>
+    <button class="btn-close"></button>
+</div>
+<h5 class="ms-5 me-5">A breadcrumb with three segments</h5>
+<nav class="ms-5 me-5" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Games</a></li>
+        <li class="breadcrumb-item active"><a asp-controller="Home" asp-action="Index">Assetto Corsa Evo</a></li>
+    </ol>
+</nav>
+<br />
