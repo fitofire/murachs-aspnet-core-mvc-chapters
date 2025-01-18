@@ -73,10 +73,10 @@
     </header>
     <br />
     <main>
-        <form asp-action="Index" method="post">
+        <form asp-controller="Home" asp-action="Index" method="post">
             <span class="me-2">I accept the terms of this site:</span>
             <button type="submit" class="btn btn-primary p-3 me-2">Yes</button>
-            <a asp-action="Index" class="btn btn-outline-secondary p-3">No</a>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary p-3">No</a>
         </form>
     </main>
 </div>
@@ -137,36 +137,36 @@
 <h3>How to work with button groups</h3>
 <h5 class="ms-5">A basic button group</h5>
 <div class="btn-group ms-5 mb-3" role="group" aria-label="Button group">
-    <a href="/" class="btn btn-outline-primary">Home</a>
-    <a href="/Cart" class="btn btn-outline-primary">Cart</a>
-    <a href="/Products" class="btn btn-outline-primary">Products</a>
-    <a href="/Contact Us" class="btn btn-outline-primary">Contact Us</a>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary">Home</a>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary">Cart</a>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary">Products</a>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary">Contact Us</a>
 </div>
 <h5 class="ms-5">A toolbar with two buttons</h5>
 <div class="btn-toolbar ms-5 mb-5" role="toolbar" aria-label="Toolbar with groups">
     <div class="btn-group me-2" role="group" aria-label="First group">
-        <a href="/" class="btn btn-outline-primary">Home</a>
-        <a href="/Cart" class="btn btn-outline-primary">Cart</a>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary">Home</a>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary">Cart</a>
     </div>
-    <div class="btn-group" role="group" aria-label="Second group">
-        <a href="/Products" class="btn btn-outline-secondary">Products</a>
-        <a href="/Contact Us" class="btn btn-outline-info">Contact Us</a>
+    <div asp-controller="Home" asp-action="Index" role="group" aria-label="Second group">
+        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary">Products</a>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-info">Contact Us</a>
     </div>
 </div>
 <br />
 <h3>How to work with badges and icons</h3>
 <h5 class="ms-5">A button group that includes icons for both of its buttons</h5>
 <div class="btn-group ms-5 mb-3" role="group" aria-label="Button group">
-    <a href="/" class="btn btn-outline-primary"><i class="bi bi-house"></i></i>&nbsp;Home&nbsp;</a>
-    <a href="/Cart" class="btn btn-outline-primary"><i class="bi bi-cart4"></i>&nbsp;Cart&nbsp;</a>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary"><i class="bi bi-house"></i></i>&nbsp;Home&nbsp;</a>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary"><i class="bi bi-cart4"></i>&nbsp;Cart&nbsp;</a>
 </div>
 <h5 class="ms-5">A button with a badge</h5>
 <div class="ms-5 mb-3">
-    <a href="/Cart" class="btn btn-outline-primary">&nbsp;Cart&nbsp;<span class="badge bg-primary">2</span></a>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary">&nbsp;Cart&nbsp;<span class="badge bg-primary">2</span></a>
 </div>
 <h5>A button with an icon and a badge</h5>
 <div class="ms-5 mb-3">
-    <a href="/Cart" class="btn btn-outline-primary"><i class="bi bi-cart4"></i>&nbsp;Cart&nbsp<span class="badge bg-primary">2</span    ></a>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary"><i class="bi bi-cart4"></i>&nbsp;Cart&nbsp<span class="badge bg-primary">2</span></a>
 </div>
 <br />
 <h3>How to work with button dropdowns</h3>
@@ -176,7 +176,21 @@
         Games
     </button>
     <div class="dropdown-menu" aria-labelledby="gamesDropdown">
-        <a class="dropdown-item" href="/games/list/assetto_corsa_evo">Assetto Corsa Evo</a>
-        <a class="dropdown-item" href="/games/list/assetto_corsa_competezione">Assetto Corsa Competezione</a>
+        <a class="dropdown-item" asp-controller="Home" asp-action="Index">Assetto Corsa Evo</a>
+        <a class="dropdown-item" asp-controller="Home" asp-action="Index">Assetto Corsa Competezione</a>
     </div>
+</div>
+<br />
+<h3>How to work with list groups</h3>
+<h5 class="ms-5 me-5">A basic list group</h5>
+<ul class="list-group ms-5 me-5 mb-3">
+    <li class="list-group-item">Assetto Corsa</li>
+    <li class="list-group-item">Assetto Corsa Competezione</li>
+    <li class="list-group-item">Assetto Corsa Evo</li>
+</ul>
+<h5 class="ms-5 me-5">Another basic list group with an active item</h5>
+<div class="list-group ms-5 me-5 mb-3">
+    <a asp-controller="Home" asp-action="Index" class="list-group-item active">Assetto Corsa</a>
+    <a asp-controller="Home" asp-action="Index" class="list-group-item">Assetto Corsa Competezione</a>
+    <a asp-controller="Home" asp-action="Index" class="list-group-item">Assetto Corsa Evo</a>
 </div>
