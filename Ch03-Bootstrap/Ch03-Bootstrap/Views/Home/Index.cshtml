@@ -67,15 +67,15 @@
 </form>
 <br />
 <div class="container">
-    <header>
+    <header class="p-4 mt-2 mb-4 bg-light rounded border">
         <img id="logo" alt="Murach logo" src="~/Images/MurachLogo.jpg" class="img-fluid rounded"/>
     </header>
     <br />
     <main>
         <form asp-action="Index" method="post">
-            <span>I accept the terms of this site:</span>
-            <button type="submit" class="btn btn-primary">Yes</button>
-            <a asp-action="Index" class="btn btn-outline-secondary">No</a>
+            <span class="me-2">I accept the terms of this site:</span>
+            <button type="submit" class="btn btn-primary p-3 me-2">Yes</button>
+            <a asp-action="Index" class="btn btn-outline-secondary p-3">No</a>
         </form>
     </main>
 </div>
