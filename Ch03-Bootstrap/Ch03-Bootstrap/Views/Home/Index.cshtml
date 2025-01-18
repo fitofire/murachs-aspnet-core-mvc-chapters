@@ -172,11 +172,11 @@
 <h3>How to work with button dropdowns</h3>
 <h5 class="ms-5">A button dropdown</h5>
 <div class="dropdown ms-5 mb-3">
-    <button type="button" class="btn btn-primary dropdown-toggle" id="gamesDropdown" data-bs-toggle="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" id="gamesDropdown" data-bs-dropdown="dropdown" aria-haspopup="true" aria-expanded="false">
         Games
     </button>
-    <div>
-        <a>Assetto Corsa Evo</a>
-        <a>Assetto Corsa Competezione</a>
+    <div class="dropdown-menu" aria-labelledby="gamesDropdown">
+        <a class="dropdown-item" href="/games/list/assetto_corsa_evo">Assetto Corsa Evo</a>
+        <a class="dropdown-item" href="/games/list/assetto_corsa_competezione">Assetto Corsa Competezione</a>
     </div>
 </div>
