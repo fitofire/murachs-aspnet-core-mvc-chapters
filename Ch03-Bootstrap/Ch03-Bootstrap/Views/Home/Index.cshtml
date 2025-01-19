@@ -80,6 +80,20 @@
         </form>
     </main>
 </div>
+<h3>Isaiah Puppy Pal Image with Leo and Buster</h3>
+<div class="container">
+    <header class="p-4 mt-2 mb-4 bg-light rounded border">
+        <img id="logo" alt="Puppypal logo" src="~/Images/puppy_pal_image_test.jpg" class="img-fluid rounded" />
+    </header>
+    <br />
+    <main>
+        <form asp-controller="Home" asp-action="Index" method="post">
+            <span class="me-2">Do you like Puppy Pal?:</span>
+            <button type="submit" class="btn btn-primary p-3 me-2">Yes</button>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary p-3">No</a>
+        </form>
+    </main>
+</div>
 <br />
 <h3>Formatting Tables</h3>
 <table class="table m-5">
