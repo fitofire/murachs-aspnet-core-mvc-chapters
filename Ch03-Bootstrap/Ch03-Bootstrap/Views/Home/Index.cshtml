@@ -209,3 +209,32 @@
     </ol>
 </nav>
 <br />
+
+<h3>How to create Navs</h3>
+<h5 class="ms-5 me-5">Nav links styles as Tabs</h5>
+<nav class="nav nav-tabs ms-5 me-5  mb-3">
+    <a class="nav-item nav-link active" asp-controller="Home" asp-action="Index">Home</a>
+    <a class="nav-item nav-link" asp-controller="Home" asp-action="Index">Games</a>
+    <a class="nav-item nav-link" asp-controller="Home" asp-action="Index">Consoles</a>
+</nav>
+
+<h5 class="ms-5 me-5">The same Nav links styled as pills</h5>
+<nav class="nav nav-pills ms-5 me-5 mb-3">
+    <a class="nav-item nav-link active" asp-controller="Home" asp-action="Index">Home</a>
+    <a class="nav-item nav-link" asp-controller="Home" asp-action="Index">Games</a>
+    <a class="nav-item nav-link" asp-controller="Home" asp-action="Index">Consoles</a>
+</nav>
+
+<h5 class="ms-5 me-5">A more verbose way of coding the same nav links</h5>
+<ul class="nav nav-pills ms-5 me-5 mb-3">
+    <li>
+        <a class="nav-item nav-link active" asp-controller="Home" asp-action="Index">Home</a>
+    </li>
+    <li>
+        <a class="nav-item nav-link" asp-controller="Home" asp-action="Index">Games</a>
+    </li>
+    <li>
+        <a class="nav-item nav-link" asp-controller="Home" asp-action="Index">Consoles</a>
+    </li>
+</ul>
+<br />
