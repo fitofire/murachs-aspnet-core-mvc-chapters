@@ -1,4 +1,7 @@
-﻿.row {
+﻿body{
+    margin-top: 70px;
+}
+.row {
     margin-bottom: 0.5rem;
 }
 
